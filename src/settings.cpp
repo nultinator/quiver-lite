@@ -151,7 +151,7 @@ void Settings::saveRestoreTableHeader(QTableView* table, QDialog* d, QString tab
 }
 
 QString Settings::getDefaultServer() {
-    return "https://wallet2.arrowchain.net:443/";
+    return "https://arrow.cryptoforge.cc:443";
 }
 
 void Settings::openAddressInExplorer(QString address) {

@@ -423,9 +423,8 @@ void MainWindow::setupSettingsModal() {
         settings.chkFetchPrices->setChecked(Settings::getInstance()->getAllowFetchPrices());
 
         // List of default servers
-        settings.cmbServer->addItem("https://wallet2.arrowchain.net:443");
-        settings.cmbServer->addItem("https://wallet.arrowchain.net:443");
-        settings.cmbServer->addItem("https://j4ys0n.com:4433");
+        settings.cmbServer->addItem("https://arrow.cryptoforge.cc:443");
+        
 
         // Load current values into the dialog
         auto conf = Settings::getInstance()->getSettings();

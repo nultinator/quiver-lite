@@ -52,13 +52,18 @@ Quiver Lite is written in C++ 14. Compile it with g++/clang++/visual c++.
 	* g++, clang++, or Visual C++
 	* [Qt5](https://www.qt.io/download).
 	* Rust v1.37 or later releases
+	
+```shell
+sudo apt-get install qmake
+sudo apt-get install libqt5websockets5-dev
+```
 
 #### Building on Linux
 
 ```
 git clone https://github.com/Arrowchain/quiver-lite.git
 cd quiver-lite
-/path/to/qt5/bin/qmake quiver-lite.pro CONFIG+=debug
+qmake zecwallet-lite.pro CONFIG+=debug
 make -j$(nproc)
 
 ./quiver-lite
